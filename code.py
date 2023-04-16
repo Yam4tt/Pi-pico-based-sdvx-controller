@@ -1,4 +1,5 @@
 #SDVX Controller firmware
+#author: Jakub Harasti (Yam4tt)
 import usb_hid
 import digitalio
 import board
@@ -8,17 +9,17 @@ from adafruit_hid.keyboard import Keyboard
 from adafruit_hid.keycode import Keycode
 
 
-#4 biele tlacidla v strede "BT"
+#"BT"
 BT1_pin = board.GP6
 BT2_pin = board.GP7 
 BT3_pin = board.GP8
 BT4_pin = board.GP9
-#2 mensie cervene tlacidla pod nimi "FX"
+#"FX"
 FXR_pin = board.GP10
 FXL_pin = board.GP11
 #tlacidlo start
 STRT_pin = board.GP13
-#enkodery
+#encoders
 encoderL = rotaryio.IncrementalEncoder(board.GP26,board.GP27)
 LastPositionL = 0
 encoderR = rotaryio.IncrementalEncoder(board.GP4,board.GP3)
