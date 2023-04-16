@@ -1,5 +1,5 @@
 #SDVX Controller firmware
-#author: Jakub Harasti (Yam4tt)
+#Made by: Jakub Harasti (Yam4tt)
 import usb_hid
 import digitalio
 import board
